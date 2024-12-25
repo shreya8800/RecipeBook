@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+    background-color: #f5f5f5; 
+    color: #333;
+    line-height: 1.6; /* Improve text readability */
+}
+/* nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 100px;
+    background-color: rgb(196, 203, 160);
+
+    align-items: center;
+    height: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+
+    /* padding:0 20px;  */
+    /* adding horizontal padding to nav */
+    
+/* } */ 
+/* nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 40px;
+    font-family:cursive;
+}   */
+.main{
+    
+    background-image:url(../media/Minimalist\ Illustration\ Recipe\ A4\ Stationary\ Page\ Border\ \(1\).png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+    
+       
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 80px; 
+
+    
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+    color:#555;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+/* Input fields */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+form textarea[type="text"] {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Image input styling */
+form input[type="image"] {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%; /* Ensures image fits within the form */
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Submit button */
+form input[type="submit"] {
+    background-color: rgba(89, 91, 84, 0.918);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.home{
+    background-color: rgba(89, 91, 84, 0.918);
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left:40px
+}
+.home :hover{
+    background-color: #9eb9d7;
+    color:white;
+}
+form input[type="submit"]:hover {
+    background-color: #9eb9d7;
+    color:black;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
