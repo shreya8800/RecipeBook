@@ -5,46 +5,15 @@ body {
     color: #333;
     line-height: 1.6; /* Improve text readability */
 }
-/* nav{
+
+.main {
+    position: relative; /* Enable positioning for child elements */
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    height: 100px;
-    background-color: rgb(196, 203, 160);
-
-    align-items: center;
-    height: 100px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-
-    /* padding:0 20px;  */
-    /* adding horizontal padding to nav */
-    
-/* } */ 
-/* nav a{
-    text-decoration: none;
-    color:black;
-    font-size: 24px;
-    text-align: left;
-    margin-left: 40px;
-    font-family:cursive;
-}   */
-.main{
-    
-    background-image:url(../media/Minimalist\ Illustration\ Recipe\ A4\ Stationary\ Page\ Border\ \(1\).png);
-    
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: center;
-    
-       
-    
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    
-    padding-top: 80px; 
-
-    
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    min-height: 100vh; /* Make the container take the full viewport height */
+    background: url('../media/pexels-karolina-grabowska-4033634 (2).jpg') no-repeat center center/cover; /* Set image as background */
+    padding: 20px; /* Add padding for better aesthetics */
 }
 
 form label{
@@ -84,7 +53,7 @@ form input[type="image"] {
 
 /* Submit button */
 form input[type="submit"] {
-    background-color: rgba(89, 91, 84, 0.918);
+    background-color: rgb(186, 92, 58);
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -95,7 +64,7 @@ form input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 .home{
-    background-color: rgba(89, 91, 84, 0.918);
+    background-color: rgb(186, 92, 58);
     text-decoration: none;
     border: none;
     padding: 10px 15px;
@@ -108,11 +77,12 @@ form input[type="submit"] {
     margin-left:40px
 }
 .home :hover{
-    background-color: #9eb9d7;
+    background-color: #4b6889;
+
     color:white;
 }
 form input[type="submit"]:hover {
-    background-color: #9eb9d7;
+    background-color: #4b6889;
     color:black;
 }
 

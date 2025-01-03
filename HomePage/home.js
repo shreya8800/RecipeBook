@@ -22,7 +22,7 @@ window.onload=function() //it work only once and its work is to have all html el
             </div>
             <div class="recipe-body">
                 <button class="view-recipe"
-                onClick="viewrecipe(${index})">View Recipe</button>
+                onClick="viewrecipe(${index})">Get Recipe</button>
 
             </div>`
         

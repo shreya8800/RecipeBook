@@ -6,7 +6,8 @@ body{
     line-height: 1.6;
 }
 .nav{
-    background-color: rgb(196, 203, 160);
+    background-color:rgb(142, 106, 77);
+
     padding:10px 20px;
     font-size:30px;
     border-bottom: 3px solid #ddd;
@@ -30,8 +31,6 @@ body{
 .nav a{
     text-decoration: none;
     color:#333;
-    font-weight: bold;
-    margin-left:30px;
     
     transition: color 0.3s ease;
 }

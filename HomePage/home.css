@@ -1,7 +1,7 @@
 body{
     margin: 0;
     /* font-family: Arial, sans-serif;  */
-    background-color: #f5f5f5; 
+    background-color: #d8d5d5; 
     color: #333;
 }
 nav{
@@ -9,7 +9,7 @@ nav{
     flex-direction: row;
     justify-content:space-between;
     height: 100px;
-    background-color: rgb(196, 203, 160);
+    /* background-color:rgb(142, 106, 77); */
 
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
@@ -21,18 +21,26 @@ nav{
     
 }
 .logo{
-    font-size: 24px;
     text-align: left;
-    font-family:cursive;
+    color: rgb(140, 132, 85);
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+
 }
 nav a{
     text-decoration: none;
-    color:black;
+    color:#fff;
+    font-family: cursive;
     font-size: 18px;
-    transition: color 0.3s ease;
+    padding:10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: rgb(140, 132, 85);
 }
 nav a:hover{
-    color:#bfd4eb;
+    background-color: #664422;
+    color:#fff;
+    transform: scale(1.05);
 }
 .otherside{
     color: black;
@@ -46,11 +54,11 @@ input{
     border: none;
     padding:10px 15px;
     transition: color 0.3s ease;
-    font-size: 16px;
+    font-size: 20px;
 }
 input::placeholder{
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 input:focus, button:hover {
@@ -74,58 +82,112 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* gap:40px; */
+    gap:40px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.recipe-name{
+.recipe-name {
     text-align: center;
-    font-size: 20px;
-}
+    font-size: 1.8rem; /* Increased font size for better visibility */
+    color: rgb(140, 132, 85); /* Rich brown color */
+    font-family: 'Dancing Script', cursive; /* Using a more decorative cursive font */
+    margin-top: 1.5rem; /* Increased top margin for better spacing */
+
+  }
 .recipe_cart{
-    background-color: rgb(35, 196, 196);
     padding: 10px;
     border-radius: 7%;
     width:20%;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(216, 35, 35, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    border: 2px solid #b8b6ae;
+    transition: all 0.3s ease;
+    background-color: whitesmoke;
 
 }
 .recipe_cart:hover{
     transform: scale(1.05);
     /* scling upwars slightly */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #999;
+    background-color: transparent;
 }
-.recipe-img{
-    margin-top: 5px;
-    /* margin-bottom: 2px; */
-    width:100%;
-    object-fit: cover;
-    height: 200px;
+.recipe-img {
+    width:300px;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* This keeps the image aspect ratio intact */
+    border-radius: 7%;
+    display: block;
 }
 .view-recipe{
     font-family: cursive;
     border: none;
-    border-radius: 8%;
+    border-radius: 20px;
     padding: 10px;
-    background-color: rgb(140, 171, 173);
+    background-color: rgb(186, 92, 58);
+
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 0.5rem;
     
     
 }
 .view-recipe:hover{
-    background-color: rgb(132, 118, 85);
+    background-color: rgb(110, 97, 67);
 }
+footer{
+    margin-top: 2rem;
+    background-color: #334658;
+    color:#ecf0f1;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.footerContainer .aboutSection,
+.footerContainer .contactSection {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footerContainer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color:rgba(197, 52, 52, 0.683);
+}
+
+.footerContainer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.bottomFooter {
+    padding: 10px 0;
+    font-size: 12px;
+    background-color: #34495e;
+    color: #bdc3c7;
+}
+
+.bottomFooter p {
+    margin: 0;
+}
+
 @media (max-width:768px) {
     .logo{
-        font-size: 20px;
+        font-size: 3rem;
         /* first it was 20px */
         margin-bottom: 10px;
     }
@@ -141,10 +203,12 @@ main{
     }
     .input{
         width: 100%;
-        margin-bottom: 10px;
+        margin-top: 3rem;
+        /* margin-bottom: 10px; */
     }
     .recipe_cart{
         width: 45%;
+        margin-top: 2rem;
         margin-bottom: 20px;
     }
     
@@ -163,4 +227,6 @@ main{
         width: 90%;
         margin-bottom: 20px;
     }
+
+
 }

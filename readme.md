@@ -19,4 +19,7 @@ Welcome to the **Recipe Book Website** !This web application is simply built usi
 
 --Javascript: For functionality,interactivity and local storage
 
+##Start
+--Go to RecipeHome folder and then at recipe.html page 
+
 
